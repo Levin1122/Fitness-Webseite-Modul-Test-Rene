@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <!-- Meta-Tags -->
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Fitness, Übungen, Training, Gesundheit, BMIRechner, BMI, Workout, Sport">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fitness Website mit übungen ohne grosse Ausrüstung">
+    <meta name="author" content="Levin Lustenberger">
+    <meta name="publisher" content="Levin Lustenberger">
+    <meta name="copyright" content="Siscore AG">
+    <meta name="company" content="Siscore AG">
+    <meta name="reply-to" content="levin.lustenberger@gmail.com">
+    <meta name="content-language" content="de">
+    <meta name="page-topic" content="Fitness">
+    <meta name="revisite-after" content="30 days">
+    <meta name="robots" content="index">
+    <meta name="geo.region" content="CH-LU">
+    <meta name="geo.placename" content="Luzern">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Task-Bar Titel -->
+    <title>BMI Rechner</title>
+
+    <!-- Css script für stylen -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- Js script für funktionen-->
+    <script src="../Funktionen.js"></script>
+
+    
+</head>
+<body>
+    <!-- Header Titel -->
+    <header>Fitness Seite Levin</header>
+
+    <!-- Navigations-Bar -->
+    <nav>
+        <a href="../Index.html">Muskel aufbauen</a>
+        <a href="Abnehmen.html">Abnehmen</a>
+        <a href="Zunehmen.html">Zunehmen</a>
+        <a href="KörpertypHerausfinden.html">Körpertyp herausfinden</a>
+        <a href="BMIRechner.html">BMI Rechner</a>
+        <a href="Formular.html">Formular</a>
+    </nav>
+
+    <!-- Bmi Rechner Container -->
+    <div class="BMIRechner-Container">
+        <h2 class="BMI-titel">BMI Rechner</h2>
+        <div class="BMI-eingabefelder">
+            <form onsubmit="berechneBMI(); return false;">
+                <label for="groesse">Größe (in cm):</label>
+                <input class="Grösse-in-cm" type="number" id="groesse" name="groesse" min="0" step="1" placeholder="Größe in cm" required><br><br>
+        
+                <label for="gewicht">Gewicht (in kg):</label>
+                <input class="Grösse-in-kg" type="number" id="gewicht" name="gewicht" min="0" step="0.1" placeholder="Gewicht in kg" required><br><br>
+        
+                <input type="submit" value="BMI berechnen">
+            </form>
+
+            <!-- ergebnis anzeigen -->
+            <div class="BMI-ergebnis">
+                <p id="bmi-ergebnis"></p>
+            </div>
+        </div>
+
+
+
+
+        <p class="BMI-titel-text">Was bedeutet eigentlich BMI?</p>
+        <text class="BMI-text">
+            Der Body-Mass-Index (BMI) ist eine Richtzahl für die Bewertung des Körpergewichts 
+            eines Menschen in Relation zu seiner Körpergrösse. Der BMI ist lediglich ein grober 
+            Richtwert, da er z.B. weder die Statur noch die individuelle Zusammensetzung der 
+            Körpermasse aus Fett- und Muskelgewebe eines Menschen berücksichtigt. Er gilt 
+            für Personen ab 19 Jahren. Die Berechnung des BMI ermöglicht eine schnelle und 
+            einfache erste Einschätzung, stellt aber weder eine Diagnose dar noch ersetzt sie 
+            den Besuch bei einem Arzt. 
+        </text>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-info">
+            <p><strong>Firma:</strong> Siscore AG</p>
+            <p><strong>Name:</strong> Levin Lustenberger</p>
+            <p><strong>Telefon:</strong> 079 369 61 26</p>
+            <p><strong>Email:</strong> <a href="mailto:levin.lustenberger@gmail.com">levin.lustenberger@gmail.com</a></p><br>
+            <p><strong>Adresse:</strong></p>
+            <p class="address">Luzern</p>
+            <p class="address">Kirchweg 8</p>
+            <p class="address">6037 Root</p>
+        </div>
+
+        <!-- Impressum + Datenschutzerklärung weiterleitung -->
+        <div class="footer-pages">
+            <a href="Impressum.html">Impressum</a>
+            <a href="Datenschutzerklärung.html">Datenschutzerklärung</a>
+        </div>
+    </footer>
+
+</body>
+</html>

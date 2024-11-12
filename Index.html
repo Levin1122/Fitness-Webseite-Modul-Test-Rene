@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <!-- Meta-Tags -->
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Fitness, Übungen, Training, Gesundheit, Muskel aufbauen, Workout, Sport">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fitness Website mit übungen ohne grosse Ausrüstung">
+    <meta name="author" content="Levin Lustenberger">
+    <meta name="publisher" content="Levin Lustenberger">
+    <meta name="copyright" content="Siscore AG">
+    <meta name="company" content="Siscore AG">
+    <meta name="reply-to" content="levin.lustenberger@gmail.com">
+    <meta name="content-language" content="de">
+    <meta name="page-topic" content="Fitness">
+    <meta name="revisite-after" content="30 days">
+    <meta name="robots" content="index">
+    <meta name="geo.region" content="CH-LU">
+    <meta name="geo.placename" content="Luzern">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Task-Bar Titel -->
+    <title>Fitness Seite</title>
+
+    <!-- Css script für stylen -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Js script für funktionen-->
+    <script src="Funktionen.js"></script>
+
+    
+</head>
+<body>
+    <!-- Header Titel -->
+    <header>Fitness Seite Levin</header>
+
+    <!-- Navigations-Bar -->
+    <nav>
+        <a href="Index.html">Muskel aufbauen</a>
+        <a href="Pages/Abnehmen.html">Abnehmen</a>
+        <a href="Pages/Zunehmen.html">Zunehmen</a>
+        <a href="Pages/KörpertypHerausfinden.html">Körpertyp herausfinden</a>
+        <a href="Pages/BMIRechner.html">BMI Rechner</a>
+        <a href="Pages/Formular.html">Formular</a>
+    </nav>
+
+    <!-- Bodyforne + Bodyhinten mappen -->
+    <div class="bodycontainer">
+        <div class="image-container">
+            <img src="BodyParts\Bodyforne.png" alt="Muskelgruppen" usemap="#frontbodymap" width="550" height="1001">
+            <img src="BodyParts\Bodyhinten.png" alt="Muskelgruppen" usemap="#backbodymap" width="559" height="1001">
+
+            <map class="content" name="frontbodymap">
+                <!-- Bizeps (links) -->
+                <area shape="poly" coords="133,335, 156,305, 170,287, 175,268, 169,249, 147,245, 124,253, 100,295, 95,331, 106,344" href="javascript:void(0);" alt="Bizeps Links" title="Bizeps Links" onclick="showBizepsInfo()">
+                <!-- Bizeps (rechts) -->
+                <area shape="poly" coords="415,333, 437,344, 448,341, 454,327, 453,303, 444,281, 428,255, 403,246, 382,249, 375,263, 377,280, 381,293, 394,306, 415,333" href="javascript:void(0);" alt="Bizeps Rechts" title="Bizeps Rechts" onclick="showBizepsInfo()">
+                <!-- Front-Schulders (links) -->
+                <area shape="poly" coords="124,253, 136,248, 150,246, 162,239, 176,226, 190,210, 201,195, 215,185, 225,181, 211,176, 193,175, 176,178, 158,185, 149,192, 138,207, 129,231" href="javascript:void(0);" alt="Front-Shoulders Links" title="Front-Shoulders Links" onclick="showfrontschuldersInfo()">
+                <!-- Front-Schulders (rechts) -->
+                <area shape="poly" coords="426,252, 416,219, 408,201, 400,191, 389,183, 371,177, 356,175, 340,176, 332,177, 324,180, 336,187, 345,192, 355,204, 363,215, 374,226, 381,234, 390,240" href="javascript:void(0);" alt="Front-Shoulders Rechts" title="Front-Shoulders Rechts" onclick="showfrontschuldersInfo()">
+                <!-- Traps (links) -->
+                <area shape="poly" coords="227,181, 234,178, 241,170, 241,143, 235,150, 203,154, 216,160 204,165, 198,168, 191,174, 204,175, 214,177, 220,178" href="javascript:void(0);" alt="Traps Links" title="Traps Links" onclick="showTrapsInfo()">
+                <!-- Traps (rechts) -->
+                <area shape="poly" coords="324,181, 316,178, 311,172, 309,168, 309,142, 317,151, 327,157, 338,161, 348,166, 354,171, 357,174, 343,176, 334,177, 329,178" href="javascript:void(0);" alt="Traps Rechts" title="Traps Rechts" onclick="showTrapsInfo()">
+                <!-- Forearms (links) -->
+                <area shape="poly" coords="49,445, 56,433, 73,420, 86,407, 101,390, 111,373, 120,356, 132,338, 119,344, 110,346, 101,341, 96,331, 96,314, 100,297, 92,312, 78,327, 69,339, 62,350, 42,395, 34,417, 27,432, 30,440, 37,446, 46,446" href="javascript:void(0);" alt="Forearms links" title="Forearms links" onclick="showForearmsInfo()">
+                <!-- Forearms (rechts) -->
+                <area shape="poly" coords="502,446, 496,436, 477,419, 460,403, 448,388, 436,366, 427,350, 417,337, 429,343, 441,346, 450,341, 455,332, 455,315, 452,299, 462,317, 481,338, 492,355, 512,404, 519,420, 524,431, 521,439, 515,446, 505,446" href="javascript:void(0);" alt="Forearms Rechts" title="Forearms Rechts" onclick="showForearmsInfo()">
+                <!-- Hands (links) -->
+                <area shape="poly" coords="26,433, 19,452, 14,467, 7,481, 4,515, 9,532, 14,531, 16,526, 22,523, 22,503, 25,494, 27,482, 30,495, 32,501, 36,503, 41,500, 43,495, 43,476, 47,469, 50,462, 50,455, 47,449, 49,444, 42,446, 35,445, 29,439" href="javascript:void(0);" alt="Hands Links" title="Hands Links" onclick="showHandsInfo()">
+                <!-- Hands (rechts) -->
+                <area shape="poly" coords="525,431, 536,465, 544,481, 547,513, 542,531, 539,532, 534,526, 529,524, 529,503, 526,493, 525,484, 521,481, 520,498, 516,503, 510,501, 508,497, 506,473, 501,461, 501,454, 503,449, 502,445, 510,446, 517,444, 523,437" href="javascript:void(0);" alt="Hands Rechts" title="Hands Rechts" onclick="showHandsInfo()">
+                <!-- Obliquus (links) -->
+                <area shape="poly" coords="192,429, 204,430, 214,424, 222,415, 227,401, 228,384, 226,366, 227,349, 232,326, 231,308, 205,285, 174,253, 271,251, 175,261, 174,277, 171,288, 178,310, 192,343, 198,362, 195,408, 192,423" href="javascript:void(0);" alt="Obliquus links" title="Obliquus links" onclick="showObliquusInfo()">
+                <!-- Obliquus (rechts) -->
+                <area shape="poly" coords="358,429, 342,428, 332,420, 325,406, 323,394, 325,370, 325,353, 320,329, 319,309, 379,251, 377,258, 376,267, 376,280, 379,289, 374,303, 368,322, 359,342, 352,361, 353,380, 358,425" href="javascript:void(0);" alt="Obliquus rechts" title="Obliquus rechts" onclick="showObliquusInfo()">
+                <!-- Thighs (links) -->
+                <area shape="poly" coords="192,429, 188,461, 183,483, 176,516, 171,556, 169,599, 170,624, 175,656, 180,680, 186,686, 190,687, 198,685, 202,686, 206,702, 211,709, 221,711, 231,705, 237,693, 244,676, 248,649, 253,628, 263,598, 270,575, 273,556, 274,533, 266,530, 260,522, 251,499, 243,472, 234,456, 223,444, 211,436, 202,431" href="javascript:void(0);" alt="Thighs links" title="Thighs links" onclick="showThighsInfo()">
+                <!-- Thighs (rechts) -->
+                <area shape="poly" coords="359,429, 363,467, 371,498, 379,542, 381,589, 380,625, 375,656, 370,680, 365,686, 359,688, 351,685, 348,687, 345,702, 338,710, 328,711, 318,705, 307,677, 302,645, 296,623, 284,587, 278,557, 277,532, 283,531, 290,523, 297,508, 306,475, 318,454, 331,441, 346,433, 351,430" href="javascript:void(0);" alt="Thighs rechts" title="Thighs rechts" onclick="showThighsInfo()">
+                <!-- Calves (links) -->
+                <area shape="poly" coords="175,726, 180,726, 189,739, 195,746, 208,747, 216,743, 224,735, 223,749, 227,789, 227,807, 222, 818, 218,824, 214,840, 208,862, 205,885, 205,904, 205,916, 201,923, 202,951, 188,963, 185,975, 179,981, 174,983, 170,989, 165,993, 159,992, 155,989, 150,992, 131,976, 131,970, 140,959, 153,948, 169,921, 172,890, 170,861, 163,805, 165,765, 172,737" href="javascript:void(0);" alt="Calves links" title="Calves links" onclick="showCalvesInfo()">
+                <!-- Calves (rechts) -->
+                <area id="calvesRechts" shape="poly" coords="327,737, 328,744, 326,700, 323,806, 326,812, 332,824, 338,847, 344,871, 346,888, 346,916, 349,922, 348,940, 347,950, 350,955, 363,963, 364,973, 368,978, 375,982, 385,992, 391,992, 397,988, 402,991, 409,987, 419,977, 417,968, 411,960, 397,948, 382,921, 378,901, 379,875, 386,821, 386,776, 383,751, 375,725, 369,727, 356,744, 342,746, 333,741" href="javascript:void(0);" alt="Calves rechts" title="Calves rechts" onclick="showCalvesInfo()">
+                <!-- Einzelne -->
+                <!-- Abdominals -->
+                <area shape="poly" coords="275,278, 280,273, 298,274, 318,284, 323,290, 322,298, 319,314, 318,365, 315,411, 311,434, 302,455, 292,472, 282,482, 277,485, 271,484, 260,474, 245,446, 237,422, 234,402, 232,328, 232,308, 227,292, 231,285, 241,277, 255,274, 267,273, 274,276" href="javascript:void(0);" alt="Abdominals" title="Abdominals" onclick="showAbdominalsInfo()">
+                <!-- Chest (links + rechts) -->
+                <area shape="poly" coords="154,246, 166,249, 176,255, 196,274, 207,278, 221,282, 237,280, 255,272, 264,265, 270,257, 273,252, 275,243, 280,256, 291,269, 301,275, 315,281, 333,281, 347,277, 357,272, 377,252, 388,247, 401,246, 386,238, 375,228, 352,200, 342,189, 328,182, 311,179, 293,180, 282,185, 275,194, 268,184, 258,180, 137,178, 218,185, 204,194, 186,216, 173,231, 161,241" href="javascript:void(0);" alt="Chest" title="Chest" onclick="showChestInfo()">
+
+
+            </map>
+
+            <map name="backbodymap">
+                <!-- Hands (links) -->
+                <area shape="poly" coords="19,446, 17,451, 16,466, 15,474, 7,506, 12,526, 27,541, 30,536, 31,533, 35,528, 29,519, 32,498, 38,493, 39,505, 43,511, 51,510, 50,498, 47,488, 50,475, 43,464, 44,454, 35,458, 27,457, 21,449" href="javascript:void(0);" alt="Hands Links" title="Hands Links" onclick="showHandsInfo()">
+                <!-- Hands (rechts) -->
+                <area shape="poly" coords="511,455, 512,462, 511,466, 507,473, 506,478, 507,489, 504,508, 510,512, 514,509, 516,503, 517,493, 523,498, 526,517, 526,520, 521,526, 523,532, 526,533, 526,539, 528,541, 542,529, 547,508, 548,498, 539,468, 538,451, 535,445, 532,452, 526,458, 518,458, 513,456" href="javascript:void(0);" alt="Hands Rechts" title="Hands Rechts" onclick="showHandsInfo()">
+                <!-- Forearms (links) -->
+                <area shape="poly" coords="87,315, 81,322, 70,334, 54,355, 43,379, 34,405, 20,445, 25,458, 35,458, 45,454, 54,440, 75,416, 89,398, 108,367, 131,335, 118,342, 112,344, 109,338, 107,322, 103,320, 90,323, 87,320" href="javascript:void(0);" alt="Forearms links" title="Forearms links" onclick="showForearmsInfo()">
+                <!-- Forearms (rechts) -->
+                <area shape="poly" coords="423,324, 444,363,467,400, 473,407, 482,418, 498,436, 505,445, 510,454, 520,458, 526,458, 533,450, 535,445, 528,427, 519,396, 510,372, 500,355, 491,341, 482,331, 467,315, 467,322, 464,323, 450,321, 447,324, 445,391, 441,344, 434,341" href="javascript:void(0);" alt="Forearms Rechts" title="Forearms Rechts" onclick="showForearmsInfo()">
+                <!-- Triceps (links) -->
+                <area shape="poly" coords="172,231, 160,236, 136,238, 127,243, 116,255, 102,278, 98,292, 89,310, 87,320, 91,324, 104,320, 108,324, 110,341, 114,344, 122,340, 137,329, 149,313, 170,280, 171,268, 166,244, 166,237" href="javascript:void(0);" alt="Triceps Links" title="Triceps Links" onclick="showTricepsInfo()">
+                <!-- Triceps (rechts) -->
+                <area shape="poly" coords="385,232, 389,239, 387,259, 384,279, 415,325, 439,343, 443,343, 446,338, 448,322, 452,320, 466,323, 468,314, 463,299, 446,264, 436,250, 422,239, 399,236" href="javascript:void(0);" alt="Triceps Rechts" title="Triceps Rechts" onclick="showTricepsInfo()">
+                <!-- Back-shoulders (links) -->
+                <area shape="poly" coords="127,243, 128,233, 136,214, 150,196, 167,184, 188,177, 205,180, 223,191, 181,225, 167,233, 146,238, 133,239" href="javascript:void(0);" alt="Back-Shoulders Links" title="Back-Shoulders Links" onclick="showBackShouldersInfo()">
+                <!-- Back-shoulders (rechts) -->
+                <area shape="poly" coords="429,243, 424,224, 415,206, 400,191, 377,179, 358,177, 340,185, 333,192, 385,232, 406,238, 421,239" href="javascript:void(0);" alt="Back-Shoulders Rechts" title="Back-Shoulders Rechts" onclick="showBackShouldersInfo()">
+                <!-- Lats (links) -->
+                <area shape="poly" coords="222,191, 180,226, 166,237, 171,278, 171,285, 178,312, 188,333, 195,349, 197,378, 195,415, 192,431, 189,451, 205,436, 234,418, 236,410, 238,371, 254,336, 263,311, 264,285, 235,214" href="javascript:void(0);" alt="Lats Links" title="Lats Links" onclick="showLatsInfo()">
+                <!-- Lats (rechts) -->
+                <area shape="poly" coords="333,191, 313,230, 293,279, 290,305, 297,327, 317,369, 319,381, 319,411, 324,422, 349,434, 360,445, 367,452, 360,412, 359,362, 362,342, 368,329, 376,313, 382,294, 386,283, 384,273, 389,244, 387,233, 356,211, 339,197" href="javascript:void(0);" alt="Lats Rechts" title="Lats Rechts" onclick="showLatsInfo()">
+                <!-- Hamstring (links) -->
+                <area shape="poly" coords="222,425, 202,437, 188,453, 187,467, 181,488, 174,521, 170,551, 168,617, 171,646, 178 682, 187,701, 192,702, 199,697, 210,675, 213,702, 218,713, 226,715, 234,709, 242,693, 247,665, 250,651, 260,615, 269,577, 274,546, 276,521, 271,528, 262,534, 221,531, 206,522, 197,505, 196,483, 209,440, 214,434" href="javascript:void(0);" alt="Hamstring Links" title="Hamstring Links" onclick="showHamstringInfo()">
+                <!-- Hamstring (rechts) -->
+                <area shape="poly" coords="336,427, 353,437, 367,452, 367,468, 375,492, 382,528, 386,564, 387,609, 384,638, 381,661, 378,679, 373,694, 367,702, 359,701, 345,674, 342,700, 337,712, 327,715, 317,703, 310,681, 306,654, 299,630, 286,580, 281,551, 279,519, 284,529, 292,534, 330,532, 347,523, 358,506, 359,488, 353,460, 345,438" href="javascript:void(0);" alt="Hamstring Rechts" title="Hamstring Rechts" onclick="showHamstringInfo()">
+                <!-- Calves (links) -->
+                <area shape="poly" coords="169,744, 160,772, 157,803, 161,832, 168,844, 176,844, 187,830, 195,819, 200,841, 205,847, 216,845, 227,830, 229,819, 225,770, 213,756, 204,758, 198,762, 192,760, 172,743" href="javascript:void(0);" alt="Calves Links" title="Calves Links" onclick="showCalvesInfo()">
+                <!-- Calves (rechts) -->
+                <area shape="poly" coords="387,744, 395,771, 398,791, 397,814, 393,835, 386,844, 378,844, 361,819, 355,841, 350,846, 340,846, 328,827, 326,816, 331,766, 340,757, 348,757, 357,761, 365,758, 383,743" href="javascript:void(0);" alt="Calves Rechts" title="Calves Rechts" onclick="showCalvesInfo()">
+                <!-- Einzelne -->
+                <!-- Traps -->
+                <area shape="poly" coords="196,177, 217,165, 237,159, 315,158, 337,165, 361,177, 348,180, 327,197, 312,197, 280,194, 253,196, 233,198, 227,196, 209,181, 199,178" href="javascript:void(0);" alt="Traps" title="Traps" onclick="showTrapsInfo()">
+                <!-- Traps-Middel -->
+                <area shape="poly" coords="225,196, 243,233, 261,275, 272,303, 276,308, 281,306, 286,297, 301,259, 319,216, 322,194, 325,198, 284,194, 237,198, 230,198" href="javascript:void(0);" alt="Traps-Middel" title="Traps-Middel" onclick="showTrapsMiddelInfo()">
+                <!-- Lower-Back -->
+                <area shape="poly" coords="262,283, 264,299, 264,310, 257,329, 237,372, 236,382, 236,411, 230,421, 247,420, 259,423, 268,429, 274,440, 278,451, 282,437, 290,427, 301,421, 315,420, 330,424, 323,418, 319,411, 319,375, 316,366, 293,315, 292,284, 285,301, 279,307, 275,307, 267,292" href="javascript:void(0);" alt="Lower-Back" title="Lower-Back" onclick="showLowerBackInfo()">
+                <!-- Glutes -->
+                <area shape="poly" coords="277,451, 283,434, 294,425, 305,421, 320,421, 333,425, 343,434, 349,449, 359,484, 359,503, 352,518, 339,529, 324,533, 290,533, 283,527, 277,521, 270,530, 263,534, 225,532, 212,526, 201,514, 196,496, 197,480, 210,438, 220,427, 233,422, 250,420, 259,423, 266,428, 272,435, 275,442" href="javascript:void(0);" alt="Glutes" title="Glutes" onclick="showGlutesInfo()">
+
+            </map>
+        </div>
+
+        <div class="Trainingsanleitungen">
+
+            <!-- Container Für BodyForneBild -->
+            <div id="Bizeps-container">
+                <h3>Bizeps Informationen Chin Ups</h3>
+                <p><b>1. </b>Greifen Sie die Stange schulterbreit mit einem supinierten Griff (Handflächen zeigen zu Ihnen)</p>
+                <p><b>2. </b>Ziehen Sie sich mit hängendem Körper und voll gestreckten Armen nach oben, bis Ihr Kinn <br>die Stange überragt</p>
+                <p><b>3. </b>Langsam in die Ausgangsposition zurückkehren und Wiederholen Sie die Übung</p>
+                <div class="Bizeps-video-container">
+                    <video src="Videos\Bizeps\Bizeps.mp4" autoplay loop muted></video>
+                </div>
+            </div>
+
+            <div id="Front-Schulders-container">
+                <h3>front-schulders Informationen Elevated Pike Press</h3>
+                <p><b>1. </b>Verwenden Sie eine Bank oder einen Gegenstand, um Ihre Füße hochzulegen</p>
+                <p><b>2. </b>Senken Sie den Kopf in Richtung Boden, indem Sie die Ellbogen anwinkeln</p>
+                <p><b>3. </b>Drücken Sie durch die Hände und kehren Sie in die Ausgangsposition zurück</p>
+                <p><b>4. </b>Wiederholen Sie die Übung</p>
+                <div class="Front-Schulders-video-container">
+                    <video src="Videos\Front-Schulders\Front-Schulders.mp4" autoplay loop muted></video>
+                </div>
+            </div>
+
+            <div id="Obliquus-container">
+                <h3>Obliquus Informationen Russian Twist</h3>
+                <p><b>1. </b>Heben Sie Ihre Fersen knapp über den Boden</p>
+                <p><b>2. </b>Strecken Sie die Brust heraus und halten Sie den Rücken flach. Die gesamte Bewegung muss in <br>der mittleren und oberen Wirbelsäule stattfinden</p>
+                <p><b>3. </b>Richten Sie den Brustkorb nach links und drehen Sie sich dann an der Wirbelsäule, bis der Brustkorb <br>nach rechts zeigt</p>
+                <p><b>4. </b>Wiederholen Sie die Übung</p>
+                <div class="Obliquus-video-container">
+                    <video src="Videos\Obliquus\Obliquus.mp4" autoplay loop muted></video>
+                </div>
+            </div>
+
+            <div id="Thighs-container">
+                <h3>Thighs Informationen Squat</h3>
+                <p><b>1. </b>Stehen Sie mit den Füßen schulterbreit auseinander</p>
+                <p><b>2. </b>Beugen Sie Ihre Knie und Hüften und gehen Sie in die Hocke, während Sie Ihren Körper absenken</p>
+                <p><b>3. </b>Weiter nach unten bis zur vollen Tiefe</p>
+                <p><b>4. </b>In die Ausgangsposition zurückkehren</p>
+                <p><b>5. </b>Wiederholen Sie die Übung</p>
+                <div class="Thighs-video-container">
+                    <video src="Videos\Thighs\Thighs.mp4" autoplay loop muted></video>
+                </div>
+            </div>
+
+            <div id="Abdominals-container">
+                <h3>Abdominals Informationen Laying Leg Raises</h3>
+                <p><b>1. </b>Legen Sie sich auf den Rücken und halten Sie die Arme mit den Handflächen nach unten auf beiden Seiten</p>
+                <p><b>2. </b>Halten Sie die Beine zusammen und so gerade wie möglich</p>
+                <p><b>3. </b>Heben Sie die Beine langsam bis zu einem 90°-Winkel an, verweilen Sie in dieser Position oder so hoch, <br>wie Sie die Beine erreichen können, und senken Sie die Beine dann langsam wieder ab</p>
+                <p><b>4. </b>Die Dauer dieser Bewegungen sollte langsam sein, damit Sie den Schwung nicht ausnutzen und das Beste <br>aus der Übung herausholen können</p>
+                <p><b>5. </b>Wiederholen Sie die Übung</p>
+                <div class="Abdominals-video-container">
+                    <video src="Videos\Abdominals\Abdominals.mp4" autoplay loop muted></video>
+                </div>
+            </div>
+
+            <div id="Chest-container">
+                <h3>Chest Informationen Decline Push Up</h3>
+                <p><b>1. </b>Benutzen Sie eine Bank, um Ihre Füße hochzulegen</p>
+                <p><b>2. </b>Legen Sie Ihre Hände etwas weiter als schulterbreit auseinander</p>
+                <p><b>3. </b>Senken Sie Ihren Körper langsam ab, bis Ihre Brust fast den Boden berührt</p>
+                <p><b>4. </b>Heben Sie den Körper an, bis Sie die Ellbogen fast einklemmen</p>
+                <p><b>5. </b>Wiederholen Sie die Übung</p>
+                <div class="Chest-video-container">
+                    <video src="Videos\Chest\Chest.mp4" autoplay loop muted></video>
+                </div>
+            </div>
+
+
+            <!-- Container Für BodyHintenBild -->
+            <div id="Triceps-container">
+                <h3>Triceps Informationen Box Dips</h3>
+                <p><b>1. </b>Halten Sie Ihren Körper mit verschränkten Armen über dem Gerät</p>
+                <p><b>2. </b>Senken Sie Ihren Körper langsam ab, während Sie sich nach vorne lehnen und die Ellbogen ausstrecken</p>
+                <p><b>3. </b>Heben Sie Ihren Körper über die Stangen, bis Ihre Arme verriegelt sind.</p>
+                <p><b>4. </b>Wiederholen Sie die Übung</p>
+                <div class="Triceps-video-container">
+                    <video src="Videos\Triceps\Triceps.mp4" autoplay loop muted></video>
+                </div>
+            </div>
+
+            <div id="Back-Shoulders-container">
+                <h3>Back-Shoulders Informationen Backward Arm Circle</h3>
+                <p><b>1. </b>Halten Sie die Arme seitlich ausgestreckt</p>
+                <p><b>2. </b>Drehen Sie die Arme in kleinen Kreisen nach hinten</p>
+                <p><b>3. </b>Wiederholen Sie die Übung</p>
+                <div class="Back-Shoulders-video-container">
+                    <video src="Videos\Back-Shoulders\Back-Shoulders.mp4" autoplay loop muted></video>
+                </div>
+            </div>
+
+            <div id="Lats-container">
+                <h3>Lats Informationen Assisted Chin Up</h3>
+                <p><b>1. </b>Greifen Sie die Klimmzugstange mit einem Untergriff, schulterbreit auseinander</p>
+                <p><b>2. </b>Stellen Sie die Füße auf den Boden, die Beine sind leicht angewinkelt</p>
+                <p><b>3. </b>Ziehen Sie Ihr Kinn mit Hilfe Ihrer Beine über die Stange</p>
+                <p><b>4. </b>Wiederholen Sie die Übung</p>
+                <div class="Lats-video-container">
+                    <video src="Videos\Lats\Lats.mp4" autoplay loop muted></video>
+                </div>
+            </div>
+
+            <div id="Hamstring-container">
+                <h3>Hamstring Informationen Reverse Lunge</h3>
+                <p><b>1. </b>Machen Sie mit dem linken Bein einen großen Schritt nach hinten und senken Sie Ihren Körper ab, <br>bis Ihr linker Oberschenkel parallel zum Boden ist und Ihr rechtes Knie in einem 90-Grad-Winkel gebeugt ist</p>
+                <p><b>2. </b>Drücken Sie die rechte Ferse durch, um in den Stand zurückzukehren, und bringen Sie das linke Bein zurück <br>in die Ausgangsposition</p>
+                <p><b>3. </b>Wiederholen Sie die Bewegung auf der anderen Seite, indem Sie mit dem rechten Bein nach hinten treten und <br>Ihren Körper absenken, bis Ihr rechter Oberschenkel parallel zum Boden ist und Ihr linkes Knie in einem <br>90-Grad-Winkel gebeugt ist</p>
+                <div class="Hamstring-video-container">
+                    <video src="Videos\Hamstring\Hamstring.mp4" autoplay loop muted></video>
+                </div>
+            </div>
+
+            <div id="Traps-Middel-container">
+                <h3>Traps-Middel Informationen Elevated Pike Press</h3>
+                <p><b>1. </b>Verwenden Sie eine Bank oder einen Gegenstand, um Ihre Füße hochzulegen</p>
+                <p><b>2. </b>Senken Sie den Kopf in Richtung Boden, indem Sie die Ellbogen anwinkeln</p>
+                <p><b>3. </b>Drücken Sie durch die Hände und kehren Sie in die Ausgangsposition zurück</p>
+                <p><b>4. </b>Wiederholen Sie die Übung</p>
+                <div class="Traps-Middel-video-container">
+                    <video src="Videos\Traps-Middel\Traps-Middel.mp4" autoplay loop muted></video>
+                </div>
+            </div>
+
+            <div id="Lower-Back-container">
+                <h3>Lower-Back Informationen Singel Legged Romanian Deadlifts</h3>
+                <p><b>1. </b>Stellen Sie sich mit schulterbreit auseinander stehenden Füßen und leicht gebeugten Knien hin und <br>heben Sie ein Bein an</p>
+                <p><b>2. </b>Ohne die Kniebeuge zu verändern, beugen Sie sich in der Hüfte und senken den Oberkörper, <br>bis er fast parallel zum Boden ist</p>
+                <p><b>3. </b>Spannen Sie die Gesäßmuskeln an und bringen Sie sich dann in die Ausgangsposition zurück</p>
+                <p><b>4. </b>Wiederholen Sie die Übung</p>
+                <div class="Lower-Back-video-container">
+                    <video src="Videos\Lower-Back\Lower-Back.mp4" autoplay loop muted></video>
+                </div>
+            </div>
+
+            <div id="Glutes-container">
+                <h3>Glutes Informationen Jump Squats</h3>
+                <p><b>1. </b>Stellen Sie sich mit den Füßen schulterbreit auseinander</p>
+                <p><b>2. </b>Beginnen Sie mit einer normalen Kniebeuge, setzen Sie dann Ihre Körpermitte ein und springen <br>Sie explosiv hoch</p>
+                <p><b>3. </b>Wenn Sie landen, senken Sie Ihren Körper wieder in die Hocke</p>
+                <p><b>4. </b>Wiederholen Sie die Übung</p>
+                <div class="Glutes-video-container">
+                    <video src="Videos\Glutes\Glutes.mp4" autoplay loop muted></video>
+                </div>
+            </div>
+
+            <!-- Container für Beide -->
+            <div id="Forearms-container">
+                <h3>Forearms Informationen Overhand Inverted Row</h3>
+                <p><b>1. </b>Legen Sie sich unter eine feste Reckstange und greifen Sie die Stange mit einem weiten Obergriff</p>
+                <p><b>2. </b>Ziehen Sie Ihren Körper gerade nach oben zur Stange</p>
+                <p><b>3. </b>Kehren Sie in die Ausgangsposition zurück und strecken Sie die Arme vollständig aus</p>
+                <p><b>4. </b>Wiederholen Sie die Übung</p>
+                <div class="Forearms-video-container">
+                    <video src="Videos\Forearms\Forearms.mp4" autoplay loop muted></video>
+                </div>
+            </div>
+
+            <div id="Hands-container">
+                <h3>Hands Informationen Plate Pinch Grip Farmer's Carry</h3>
+                <p><b>1. </b>Stellen Sie sich aufrecht hin und halten Sie in jeder Hand zwei Teller im Kneifgriff</p>
+                <p><b>2. </b>Gehen Sie die gewünschte Strecke oder Zeit</p>
+                <div class="Hands-video-container">
+                    <video src="Videos\Hands\Hands.mp4" autoplay loop muted></video>
+                </div>
+            </div>
+
+            <div id="Traps-container">
+                <h3>Traps Informationen Elevated Pike Press</h3>
+                <p><b>1. </b>Verwenden Sie eine Bank oder einen Gegenstand, um Ihre Füße hochzulegen</p>
+                <p><b>2. </b>Senken Sie den Kopf in Richtung Boden, indem Sie die Ellbogen anwinkeln</p>
+                <p><b>3. </b>Drücken Sie durch die Hände und kehren Sie in die Ausgangsposition zurück</p>
+                <p><b>4. </b>Wiederholen Sie die Übung</p>
+                <div class="Traps-video-container">
+                    <video src="Videos\Traps\Traps.mp4" autoplay loop muted></video>
+                </div>
+            </div>
+
+            <div id="Calves-container">
+                <h3>Calves Informationen Calf Raises</h3>
+                <p><b>1. </b>Balancieren Sie auf den Fußballen auf der Plattform oder den Platten und lehnen Sie sich nach vorne, <br>um das Gleichgewicht an der Wand zu halten</p>
+                <p><b>2. </b>Senken Sie die Fersen Ihrer Füße in Richtung Boden und halten Sie inne. Drücken Sie sich dann mit <br>den Fussballen ab, als ob Sie auf Zehenspitzen stehen würden, und halten Sie am Scheitelpunkt <br>der Bewegung inne</p>
+                <p><b>3. </b>Wiederholen Sie die Übung</p>
+                <div class="Calves-video-container">
+                    <video src="Videos\Calves\Calves.mp4" autoplay loop muted></video>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-info">
+            <p><strong>Firma:</strong> Siscore AG</p>
+            <p><strong>Name:</strong> Levin Lustenberger</p>
+            <p><strong>Telefon:</strong> 079 369 61 26</p>
+            <p><strong>Email:</strong> <a href="mailto:levin.lustenberger@gmail.com">levin.lustenberger@gmail.com</a></p><br>
+            <p><strong>Adresse:</strong></p>
+            <p class="address">Luzern</p>
+            <p class="address">Kirchweg 8</p>
+            <p class="address">6037 Root</p>
+        </div>
+
+        <!-- Impressum + Datenschutzerklärung weiterleitung -->
+        <div class="footer-pages">
+            <a href="Pages/Impressum.html">Impressum</a>
+            <a href="Pages/Datenschutzerklärung.html">Datenschutzerklärung</a>
+        </div>
+    </footer>
+
+</body>
+</html>

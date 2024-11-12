@@ -1,0 +1,12 @@
+User-agent: *
+
+Allow: /Index
+Allow: /Abnehmen
+Allow: /BMI-Rechner
+Allow: /Formular
+Allow: /KörpertypHerausfinden
+Allow: /Zunehmen
+
+Disallow: /Danke
+Disallow: /Datenschutz
+Disallow: /Impressum

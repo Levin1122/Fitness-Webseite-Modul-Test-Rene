@@ -1,0 +1,473 @@
+/* Allgemeine Stileinstellungen für den gesamten Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d4cfcf;
+}
+
+
+/* Index 2 BODY Bilder Centrieren ------------------------------------------------- */
+.bodycontainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.image-container{
+    border: 2px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+}
+
+
+/* Header --------------------------------------------------------------------- */
+header {
+    background: linear-gradient(to top, #6f85b5, #394d6b);
+    color: white;
+    padding-top: 11px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Arial', sans-serif;
+    letter-spacing: 1px;
+}
+
+
+/* Footer -------------------------------------------------------------------- */
+footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: 1px solid #ddd;
+}
+
+.footer-info {
+    text-align: left;
+}
+
+.footer-pages {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.footer-pages a {
+    display: block;
+    margin-bottom: 10px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.footer-pages a:hover {
+    text-decoration: underline;
+}
+
+.address {
+    margin-top: -8px;
+}
+
+
+/* Navigation ------------------------------------------------------------- */
+nav {
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    margin-top: -8px;
+}
+
+/* Menue Bar (Text) */
+nav a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 12px 30px;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family: 'Arial', sans-serif;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+/* Hover-Effekt */
+nav a:hover {
+    background-color: #526e92;
+    color: #fff;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+    transform: scale(1.05);
+}
+
+
+/* Info Containers (Für Muskeln) ------------------------------------------------------ */
+/* Front + Back Picture */
+#Bizeps-container,
+#Front-Schulders-container,
+#Traps-container,
+#Forearms-container,
+#Hands-container,
+#Obliquus-container,
+#Thighs-container,
+#Calves-container,
+#Abdominals-container,
+#Chest-container,
+#Hands-container,
+#Triceps-container,
+#Back-Shoulders-container,
+#Lats-container,
+#Hamstring-container,
+#Traps-Middel-container,
+#Lower-Back-container,
+#Glutes-container {
+    display: none;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Einheitliche Größe und Skalierung für alle Video-Container */
+.Bizeps-video-container,
+.Front-Schulders-video-container,
+.Traps-video-container,
+.Forearms-video-container,
+.Hands-video-container,
+.Obliquus-video-container,
+.Thighs-video-container,
+.Calves-video-container,
+.Abdominals-video-container,
+.Chest-video-container,
+.Triceps-video-container,
+.Back-Shoulders-video-container,
+.Lats-video-container,
+.Hamstring-video-container,
+.Traps-Middel-video-container,
+.Lower-Back-video-container,
+.Glutes-video-container {
+    width: 800px;
+    max-width: 100%;
+}
+
+/* Einheitliche Videostile */
+.Bizeps-video-container video,
+.Front-Schulders-video-container video,
+.Traps-video-container video,
+.Forearms-video-container video,
+.Hands-video-container video,
+.Obliquus-video-container video,
+.Thighs-video-container video,
+.Calves-video-container video,
+.Abdominals-video-container video,
+.Chest-video-container video,
+.Triceps-video-container video,
+.Back-Shoulders-video-container video,
+.Lats-video-container video,
+.Hamstring-video-container video,
+.Traps-Middel-video-container video,
+.Lower-Back-video-container video,
+.Glutes-video-container video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Info Containers (Für Muskeln) ---------------------------------------------------------------------------*/
+/* FormularPage + label + Button*/
+.Formular-container {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.Formular-titel {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+.Anrede-select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group.required label::after {
+    content: " *";
+    color: red;
+}
+
+.preview {
+    font-size: 12px;
+    color: #777;
+}
+
+.Formularfelder {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.Formular-Untertitel {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #888;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Zunehmen ---------------------------------------------------------------------------*/
+.Zunehmen-Container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Zunehmen-Text {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    width: 800px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.Zunehmen-Flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.Text-Side {
+    width: 50%;
+}
+
+.So-steigerst-du-dein-Gewicht {
+    background-color: rgba(0, 0, 255, 0.4);
+    color: black;
+    margin-bottom: 55px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    width: 45%;
+    margin-left: auto;
+    margin: auto;
+}
+
+.Geeignete-Energiespender {
+    background-color: rgba(0, 0, 255, 0.4);
+    color: black;
+    margin-bottom: 90px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    width: 45%;
+    margin: auto;
+    margin-left: auto;
+}
+
+.So-steigerst-du-dein-Gewicht {
+    order: 2;
+}
+
+.Geeignete-Energiespender {
+    order: 1;
+}
+
+
+/* Abnehmen ---------------------------------------------------------------------------*/
+.Abnehmen-Container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Abnehmen-Text {
+    border: 1px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    width: 800px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/* Körpertyp herausfinden + input(submit) ---------------------------------------------------------------------------*/
+#body-type-test {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body-type-Container {
+    border: 1px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    width: 800px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+input[type="submit"] {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.result {
+    text-align: center;
+}
+
+
+/* BMI Rechner ---------------------------------------------------------------------------*/
+.BMIRechner-Container {
+    width: 800px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.BMI-eingabefelder {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.BMI-titel {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.Grösse-in-cm,
+.Grösse-in-kg {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.BMI-eingabefelder input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.BMI-eingabefelder input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+/* Danke ---------------------------------------------------------------------------*/
+.Danke {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.Danke-section {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    text-align: center;
+    padding: 40px;
+    border: 1px solid #ddd;
+    max-width: 800px;
+    width: 90%;
+}
